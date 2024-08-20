@@ -1,39 +1,39 @@
 ---
 title: Uninstall
-description: "Learn how to uninstall Dokploy on your server"
+description: "Learn how to uninstall Alvi Paas on your server"
 ---
 
-import { Step, Steps } from 'fumadocs-ui/components/steps';
+import { Step, Steps } from "fumadocs-ui/components/steps";
 
-Follow these steps to completely remove Dokploy and its components from your server.
+Follow these steps to completely remove Alvi Paas and its components from your server.
 
 <Steps>
 <Step>
-Remove the docker swarm services created by Dokploy:
+Remove the docker swarm services created by Alvi Paas:
 
-   ```bash
-   docker service rm dokploy dokploy-traefik dokploy-postgres dokploy-redis
-   ```
- 
+```bash
+docker service rm alvi-paas alvi-paas-traefik alvi-paas-postgres alvi-paas-redis
+```
+
 </Step>
  
 <Step>
  
-Remove the docker volumes created by Dokploy:
+Remove the docker volumes created by Alvi Paas:
 
-   ```bash
-   docker volume rm -f dokploy-postgres-database redis-data-volume
-   ```
- 
+```bash
+docker volume rm -f alvi-paas-postgres-database redis-data-volume
+```
+
 </Step>
  
 <Step>
 
-Remove the dokploy files and directories from your server:
+Remove the alvi-paas files and directories from your server:
 
-   ```bash
-   sudo rm -rf /etc/dokploy
-   ```
- 
+```bash
+sudo rm -rf /etc/alvi-paas
+```
+
 </Step>
 </Steps>

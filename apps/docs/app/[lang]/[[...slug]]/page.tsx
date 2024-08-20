@@ -88,9 +88,9 @@ export function generateMetadata({
 				},
 			],
 		},
-		applicationName: "Dokploy Docs",
+		applicationName: "Alvi Paas Docs",
 		keywords: [
-			"dokploy",
+			"paas",
 			"vps",
 			"open source",
 			"cloud",

@@ -1,11 +1,11 @@
 ---
 title: "Web 域名设置"
-description: "学习如何为 Dokploy 面板设置主域名"
+description: "学习如何为 Alvi Paas 面板设置主域名"
 ---
 
 ## 介绍
 
-本指南涵盖 Dokploy 面板主域名的基本设置。
+本指南涵盖 Alvi Paas 面板主域名的基本设置。
 
 ## 要求
 
@@ -32,16 +32,22 @@ description: "学习如何为 Dokploy 面板设置主域名"
 1. 登录 Cloudflare 并导航至 `Websites` -> `Your Domain` -> `DNS` -> `Records`.
 2. 点击 `Add record`, 选择 `A`.
 3. 在 name 字段中输入 `web` 和, 在值字段中输入您的 IP 地址（例如，`1.2.3.4`） 。
-4. 保存记录。 您的 DNS 记录将是 `web.dokploy.com`.
+4. 保存记录。 您的 DNS 记录将是 `web.alvi-paas.com`.
 
-<ImageZoom  src="/assets/images/web-domain-setup/domain-setup.png" width={800} height={630} quality={100} priority alt='home og image' className="rounded-lg" />
+## Alvi Paas 面板设置
 
-## Dokploy 面板设置
-
-1. 登录您的 Dokploy 面板。
+1. 登录您的 Alvi Paas 面板。
 2. 导航到 `/dashboard/settings/server`.
-3. 在服务器域下，将您的域设置为与 Cloudflare 中配置的域相匹配(例如, `web.dokploy.com`).
+3. 在服务器域下，将您的域设置为与 Cloudflare 中配置的域相匹配(例如, `web.alvi-paas.com`).
 4. 保存，应用更改需要约 20 秒的时间生效。
-5. 通过以下方式访问您的面板 `https://web.dokploy.com`.
+5. 通过以下方式访问您的面板 `https://web.alvi-paas.com`.
 
-<ImageZoom  src="/assets/images/web-domain-setup/dokploy-domain.png" width={800} height={630} quality={100} priority alt='home og image' className="rounded-lg" />
+<ImageZoom
+  src="web-domain-setup/alvi-paas-domain.png"
+  width={800}
+  height={630}
+  quality={100}
+  priority
+  alt="home og image"
+  className="rounded-lg"
+/>

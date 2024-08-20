@@ -3,20 +3,20 @@ title: Domains
 description: Domains
 ---
 
-This section outlines how to configure domains for your applications in Dokploy, ensuring that your applications are accessible via custom URLs.
-
+This section outlines how to configure domains for your applications in Alvi Paas, ensuring that your applications are accessible via custom URLs.
 
 ### Add Domain
 
 Associate custom domains with your application to make it accessible over the internet.
 
-- **Host**: The domain name that you want to link to your application (e.g., `api.dokploy.com`).
+- **Host**: The domain name that you want to link to your application (e.g., `api.alvi-paas.com`).
 - **Path**: The specific path within the domain where the application should be accessible.
 - **Container Port**: The port on the container that the domain should route to.
-- **Certificate**: Select whether to secure the domain with SSL/TLS certificates. Dokploy supports automatic provisioning of SSL certificates via Let's Encrypt.
+- **Certificate**: Select whether to secure the domain with SSL/TLS certificates. Alvi Paas supports automatic provisioning of SSL certificates via Let's Encrypt.
 - **HTTPS**: Toggle this on to enable HTTPS for your domain, providing secure, encrypted connections.
 
 #### Steps to Add a Domain
+
 1. Click 'Add Domain'.
 2. Fill in the domain details, including host, path, and port.
 3. Choose to enable HTTPS and select a certificate option.
@@ -29,6 +29,7 @@ Quickly set up a domain for development or testing purposes without needing to r
 - **Generate TraefikMe Domain**: Creates a free domain provided by TraefikMe. This is ideal for testing or temporary access before a proper domain is purchased.
 
 #### Steps to Generate a Domain
+
 1. Click 'Generate Domain'.
 2. Choose 'Generate TraefikMe Domain' for a quick setup.
 3. A domain will be automatically assigned to your application.
@@ -41,7 +42,6 @@ Quickly set up a domain for development or testing purposes without needing to r
 ### Note
 
 Proper domain configuration is crucial for the accessibility and security of your application. Always verify domain settings and ensure that DNS configurations are properly set up to point to the correct IP addresses. Enable HTTPS to enhance security and trust, especially for production environments.
-
 
 ### Important Clarification on Container Ports
 

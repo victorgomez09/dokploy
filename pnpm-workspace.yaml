@@ -1,4 +1,3 @@
 packages:
-  - "apps/dokploy"
+  - "apps/alvi-paas"
   - "apps/docs"
-  - "apps/website"

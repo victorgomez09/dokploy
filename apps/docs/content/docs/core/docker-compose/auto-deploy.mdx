@@ -1,9 +1,9 @@
 ---
 title: Auto-deploy
-description: How to auto-deploy your docker-compose application with Dokploy
+description: How to auto-deploy your docker-compose application with Alvi Paas
 ---
 
-Automatically deploying your docker-compose application to Dokploy can be achieved through two primary methods: using Webhooks or the Dokploy API. Each method supports various platforms and provides a streamlined deployment process.
+Automatically deploying your docker-compose application to Alvi Paas can be achieved through two primary methods: using Webhooks or the Alvi Paas API. Each method supports various platforms and provides a streamlined deployment process.
 
 ## Github
 
@@ -20,7 +20,7 @@ Webhooks allow you to automatically deploy your docker-compose application whene
 
 ### Configuration Steps
 
-1. **Enable Auto Deploy**: Toggle the 'Auto Deploy' button found in the general tab of your application settings in Dokploy.
+1. **Enable Auto Deploy**: Toggle the 'Auto Deploy' button found in the general tab of your application settings in Alvi Paas.
 2. **Obtain Webhook URL**: Locate the Webhook URL from the deployment logs.
 
 <ImageZoom
@@ -32,7 +32,7 @@ Webhooks allow you to automatically deploy your docker-compose application whene
 
 3. **Configure Your Repository**:
    - Navigate to your repository settings on your chosen platform.
-   - Add the webhook URL provided by Dokploy.
+   - Add the webhook URL provided by Alvi Paas.
    - Ensure the settings match the configuration necessary for triggering the webhook.
 
 <ImageZoom
@@ -44,18 +44,18 @@ Webhooks allow you to automatically deploy your docker-compose application whene
 
 #### Important Notes
 
-- **Branch Matching**: When using Git-based providers (GitHub, GitLab, etc.), ensure that the branch configured in Dokploy matches the branch you intend to push to. Misalignment will result in a "Branch Not Match" error.
+- **Branch Matching**: When using Git-based providers (GitHub, GitLab, etc.), ensure that the branch configured in Alvi Paas matches the branch you intend to push to. Misalignment will result in a "Branch Not Match" error.
 - The steps are the same for all the providers.
 
 ## API Method
 
-Deploy your application programmatically using the Dokploy API from anywhere.
+Deploy your application programmatically using the Alvi Paas API from anywhere.
 
 ### Steps to Deploy Using API
 
 Steps:
 
-1. **Generate a Token**: Create an API token in your profile settings on Dokploy.
+1. **Generate a Token**: Create an API token in your profile settings on Alvi Paas.
 2. **Retrieve Compose ID**:
 
 ```http
@@ -71,7 +71,7 @@ This command lists all projects and services. Identify the composeId for the com
 
 ```http
 curl -X 'POST' \
-  'https://canary.dokploy.com/api/compose.deploy' \
+  'https://canary.alvi-paas.com/api/compose.deploy' \
   -H 'accept: application/json' \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer <token>' \

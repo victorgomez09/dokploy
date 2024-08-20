@@ -3,7 +3,7 @@ title: Advanced
 description: Learn how to use advanced features in your application.
 ---
 
-This section is designed for experienced users who need to manage complex configurations and orchestration settings in Dokploy. Here, you can execute custom commands, manage cluster replicas, select Docker registries, and configure Docker Swarm settings.
+This section is designed for experienced users who need to manage complex configurations and orchestration settings in Alvi Paas. Here, you can execute custom commands, manage cluster replicas, select Docker registries, and configure Docker Swarm settings.
 
 ### Run Command
 
@@ -17,6 +17,7 @@ This section is designed for experienced users who need to manage complex config
 - **Registry Selection**: Choose the Docker registry from which your container images will be pulled. This is crucial for ensuring that the correct images are used during deployment.
 
 #### Important Note
+
 Always click 'Redeploy' after modifying the cluster settings to apply the changes.
 
 ### Swarm Settings
@@ -40,7 +41,6 @@ Defines how containers should be handled if they exit or fail, the configuration
 #### Update Config
 
 Manages the deployment and update process of services in the swarm, the configuration is as follows:
-
 
 - **Parallelism**: Number of containers to update simultaneously.
 - **Delay**: Time between updates.
@@ -91,13 +91,13 @@ Configures network settings for the services, the configuration is as follows:
 Assigns metadata to containers to help identify and organize them, the configuration is as follows:
 
 - **Labels**: Key-value pairs assigned to the service. For example:
+
 1. `com.example.app.name`: "my-app"
 2. `com.example.app.version`: "1.0.0"
 
-
 ### Note
-Modifying Swarm Settings requires careful consideration as incorrect configurations can disrupt the entire container orchestration. Always ensure you understand the implications of the changes you are making.
 
+Modifying Swarm Settings requires careful consideration as incorrect configurations can disrupt the entire container orchestration. Always ensure you understand the implications of the changes you are making.
 
 ## Resources
 
@@ -108,29 +108,40 @@ Manage the memory and CPU resources allocated to your applications or databases.
 - **CPU Limit**: The maximum number of CPU units that the application can utilize.
 - **CPU Reservation**: The minimum number of CPU units reserved for the application.
 
-
 ### Volumes/Mounts
 
 Configure persistent storage for your application to ensure data remains intact across container restarts and deployments.
 
-
 **Bind Mount**: Maps a host file or directory to a container file or directory. Typically used for specific configurations or databases.
+
 1. **Host Path**: Path on the host.
 2. **Mount Path**: Path in the container.
 
 **Volume Mount**: Uses Docker-managed volumes that are easier to back up and migrate than bind mounts.
+
 1. **Volume Name**: Name of the Docker-managed volume.
 2. **Mount Path**: Path in the container where the volume is mounted.
 
 **File Mount**: Specifically for single files, useful for configuration files.
+
 1. **Content**: The content to store in the file.
 2. **Mount Path**: Path in the container where the file is placed.
 
-File mounts are a dokploy features, this create a file in a folder called `files` inside your project, so it recreates every single time you deploy your project.
+File mounts are a alvi-paas features, this create a file in a folder called `files` inside your project, so it recreates every single time you deploy your project.
 
-<ImageZoom src="/assets/file-mount-configuration.webp" width={800} height={630} className="rounded-lg"/>
+<ImageZoom
+  src="/assets/file-mount-configuration.webp"
+  width={800}
+  height={630}
+  className="rounded-lg"
+/>
 
-<ImageZoom src="/assets/file-mount.png" width={800} height={630} className="rounded-lg"/>
+<ImageZoom
+  src="/assets/file-mount.png"
+  width={800}
+  height={630}
+  className="rounded-lg"
+/>
 
 ### Redirects
 
@@ -141,8 +152,8 @@ Redirect requests to your application to another URL based on specified rules, e
 - **Permanent**: Toggle this option to apply a permanent (HTTP 301) redirection, indicating to browsers and search engines that the page has moved permanently.
 
 #### Example
-To redirect all traffic from "http://localhost" to "http://mydomain", set the Regex as `http://localhost/(.*)` and the Replacement as `http://mydomain/$1`.
 
+To redirect all traffic from "http://localhost" to "http://mydomain", set the Regex as `http://localhost/(.*)` and the Replacement as `http://mydomain/$1`.
 
 ### Security
 
@@ -152,8 +163,8 @@ Add basic authentication to your application to restrict access.
 - **Password**: Enter a password.
 
 #### Important Note
-Adding basic authentication will prompt users for a username and password before allowing access to the application. Use this for environments where an additional layer of security is required.
 
+Adding basic authentication will prompt users for a username and password before allowing access to the application. Use this for environments where an additional layer of security is required.
 
 ### Ports
 
@@ -164,6 +175,7 @@ Expose your application to the internet by configuring network ports, allowing e
 - **Protocol**: Choose between TCP and UDP based on your application's requirements.
 
 #### Important Note
+
 Ensure that the published port does not conflict with other services on the host to avoid port binding errors, also this port is used mostly for accesing the application from the outside, eg your-ip:port, this is not for accessing the application trought a domain.
 
 ### Traefik

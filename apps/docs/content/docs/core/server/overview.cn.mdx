@@ -1,15 +1,15 @@
 ---
 title: 概述
-description: "Dokploy 提供多种功能来有效管理您的服务器。其中包括管理服务器设置、配置文件、外观、S3存储、证书和用户。"
+description: "Alvi Paas 提供多种功能来有效管理您的服务器。其中包括管理服务器设置、配置文件、外观、S3存储、证书和用户。"
 ---
 
-import { Callout } from 'fumadocs-ui/components/callout';
+import { Callout } from "fumadocs-ui/components/callout";
 
 ## 服务器
 
 `Server` 选项卡提供服务管理的各种功能：
 
-- **Reload Instance(重新加载实例)**: 重新加载 Dokploy 实例.
+- **Reload Instance(重新加载实例)**: 重新加载 Alvi Paas 实例.
 - **Watch Logs(观察日志)**: 监视服务器日志.
 - **Traefik Configuration(Traefik 配置)**: 查看 Traefik 的主要配置。
 - **View Middlewares(查看中间件)**: 检查活动的中间件。
@@ -21,7 +21,7 @@ import { Callout } from 'fumadocs-ui/components/callout';
 
 ### GitHub 集成
 
-配置您的 GitHub 帐户以管理组织或个人项目。 将用于您从 GitHub创建应用程序和部署存储库。
+配置您的 GitHub 帐户以管理组织或个人项目。 将用于您从 GitHub 创建应用程序和部署存储库。
 
 ### 空间管理
 
@@ -76,16 +76,17 @@ import { Callout } from 'fumadocs-ui/components/callout';
 - **Private Key**: 输入私钥。
 
 <Callout>
-  它只会在服务器中创建证书，如果您需要更详细地配置或管理，您可以使用 `Traefik` 选项卡来配置它。
+  它只会在服务器中创建证书，如果您需要更详细地配置或管理，您可以使用 `Traefik`
+  选项卡来配置它。
 </Callout>
 
 ## 用户
 
-管理 Dokploy 中的用户角色和权限。每个实例仅限一个管理员角色。
+管理 Alvi Paas 中的用户角色和权限。每个实例仅限一个管理员角色。
 
 ### 权限
 
-Dokploy 提供多种权限来管理您的用户。
+Alvi Paas 提供多种权限来管理您的用户。
 
 **Create Projects** 将允许您创建新项目。
 
@@ -105,4 +106,4 @@ Dokploy 提供多种权限来管理您的用户。
 
 - 使用 `Traefik` 选项卡进行详细的配置调整。
 - 使用前测试与 S3 桶的连接，以确保设置正确。
-- 请记住，如果需要详细管理，Dokploy 中添加的证书需要在 `Traefik` 选项卡中进一步配置。
+- 请记住，如果需要详细管理，Alvi Paas 中添加的证书需要在 `Traefik` 选项卡中进一步配置。

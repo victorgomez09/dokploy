@@ -1,10 +1,24 @@
 ---
-title: Dokploy API
-description: Endpoints for dokploy
+title: Alvi Paas API
+description: Endpoints for alvi-paas
 full: true
 ---
 
-import { Root, API, APIInfo, APIExample, Responses, Response, ResponseTypes, ExampleResponse, TypeScriptResponse, Property, ObjectCollapsible, Requests, Request } from "fumadocs-ui/components/api";
+import {
+  Root,
+  API,
+  APIInfo,
+  APIExample,
+  Responses,
+  Response,
+  ResponseTypes,
+  ExampleResponse,
+  TypeScriptResponse,
+  Property,
+  ObjectCollapsible,
+  Requests,
+  Request,
+} from "fumadocs-ui/components/api";
 
 <Root>
 
@@ -22,10 +36,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -45,7 +59,7 @@ curl -X GET "http://localhost:3000/admin.one"
 
 ```js
 fetch("http://localhost:3000/admin.one", {
-  method: "GET"
+  method: "GET",
 });
 ```
 
@@ -117,14 +131,14 @@ In: `header`
 
 <Property name={"email"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Format:  `"email"`</span>
+<span>Format: `"email"`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -147,7 +161,7 @@ curl -X POST "http://localhost:3000/admin.createUserInvitation" \
 
 ```js
 fetch("http://localhost:3000/admin.createUserInvitation", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -219,14 +233,14 @@ In: `header`
 
 <Property name={"authId"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -249,7 +263,7 @@ curl -X POST "http://localhost:3000/admin.removeUser" \
 
 ```js
 fetch("http://localhost:3000/admin.removeUser", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -321,14 +335,14 @@ In: `header`
 
 <Property name={"token"} type={"string"} required={true} deprecated={false}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -348,7 +362,7 @@ curl -X GET "http://localhost:3000/admin.getUserByToken"
 
 ```js
 fetch("http://localhost:3000/admin.getUserByToken", {
-  method: "GET"
+  method: "GET",
 });
 ```
 
@@ -420,7 +434,7 @@ In: `header`
 
 <Property name={"userId"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
@@ -460,10 +474,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -499,7 +513,7 @@ curl -X POST "http://localhost:3000/admin.assignPermissions" \
 
 ```js
 fetch("http://localhost:3000/admin.assignPermissions", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -567,10 +581,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -590,7 +604,7 @@ curl -X POST "http://localhost:3000/admin.cleanGithubApp"
 
 ```js
 fetch("http://localhost:3000/admin.cleanGithubApp", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -658,10 +672,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -681,7 +695,7 @@ curl -X GET "http://localhost:3000/admin.getRepositories"
 
 ```js
 fetch("http://localhost:3000/admin.getRepositories", {
-  method: "GET"
+  method: "GET",
 });
 ```
 
@@ -753,20 +767,20 @@ In: `header`
 
 <Property name={"repo"} type={"string"} required={true} deprecated={false}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
 <Property name={"owner"} type={"string"} required={true} deprecated={false}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -786,7 +800,7 @@ curl -X GET "http://localhost:3000/admin.getBranches"
 
 ```js
 fetch("http://localhost:3000/admin.getBranches", {
-  method: "GET"
+  method: "GET",
 });
 ```
 
@@ -854,10 +868,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -877,7 +891,7 @@ curl -X GET "http://localhost:3000/admin.haveGithubConfigured"
 
 ```js
 fetch("http://localhost:3000/admin.haveGithubConfigured", {
-  method: "GET"
+  method: "GET",
 });
 ```
 
@@ -945,10 +959,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -968,7 +982,7 @@ curl -X GET "http://localhost:3000/docker.getContainers"
 
 ```js
 fetch("http://localhost:3000/docker.getContainers", {
-  method: "GET"
+  method: "GET",
 });
 ```
 
@@ -1040,14 +1054,14 @@ In: `header`
 
 <Property name={"containerId"} type={"string"} required={true} deprecated={false}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -1067,7 +1081,7 @@ curl -X GET "http://localhost:3000/docker.getConfig"
 
 ```js
 fetch("http://localhost:3000/docker.getConfig", {
-  method: "GET"
+  method: "GET",
 });
 ```
 
@@ -1139,14 +1153,14 @@ In: `header`
 
 <Property name={"appName"} type={"string"} required={true} deprecated={false}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -1166,7 +1180,7 @@ curl -X GET "http://localhost:3000/docker.getContainersByAppNameMatch"
 
 ```js
 fetch("http://localhost:3000/docker.getContainersByAppNameMatch", {
-  method: "GET"
+  method: "GET",
 });
 ```
 
@@ -1238,14 +1252,14 @@ In: `header`
 
 <Property name={"appName"} type={"string"} required={true} deprecated={false}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -1265,7 +1279,7 @@ curl -X GET "http://localhost:3000/docker.getContainersByAppLabel"
 
 ```js
 fetch("http://localhost:3000/docker.getContainersByAppLabel", {
-  method: "GET"
+  method: "GET",
 });
 ```
 
@@ -1337,20 +1351,20 @@ In: `header`
 
 <Property name={"email"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Format:  `"email"`</span>
+<span>Format: `"email"`</span>
 
 </Property>
 
 <Property name={"password"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `8`</span>
+<span>Minimum length: `8`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -1374,7 +1388,7 @@ curl -X POST "http://localhost:3000/auth.createAdmin" \
 
 ```js
 fetch("http://localhost:3000/auth.createAdmin", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -1446,7 +1460,7 @@ In: `header`
 
 <Property name={"password"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `8`</span>
+<span>Minimum length: `8`</span>
 
 </Property>
 
@@ -1456,14 +1470,14 @@ In: `header`
 
 <Property name={"token"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -1488,7 +1502,7 @@ curl -X POST "http://localhost:3000/auth.createUser" \
 
 ```js
 fetch("http://localhost:3000/auth.createUser", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -1560,20 +1574,20 @@ In: `header`
 
 <Property name={"email"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Format:  `"email"`</span>
+<span>Format: `"email"`</span>
 
 </Property>
 
 <Property name={"password"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `8`</span>
+<span>Minimum length: `8`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -1597,7 +1611,7 @@ curl -X POST "http://localhost:3000/auth.login" \
 
 ```js
 fetch("http://localhost:3000/auth.login", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -1665,10 +1679,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -1688,7 +1702,7 @@ curl -X GET "http://localhost:3000/auth.get"
 
 ```js
 fetch("http://localhost:3000/auth.get", {
-  method: "GET"
+  method: "GET",
 });
 ```
 
@@ -1756,10 +1770,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -1779,7 +1793,7 @@ curl -X POST "http://localhost:3000/auth.logout"
 
 ```js
 fetch("http://localhost:3000/auth.logout", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -1863,7 +1877,7 @@ In: `header`
 
 <Property name={"rol"} type={"string"} required={false} deprecated={undefined}>
 
-<span>Value in:  `"admin" | "user"`</span>
+<span>Value in: `"admin" | "user"`</span>
 
 </Property>
 
@@ -1887,10 +1901,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -1921,7 +1935,7 @@ curl -X POST "http://localhost:3000/auth.update" \
 
 ```js
 fetch("http://localhost:3000/auth.update", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -1989,10 +2003,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -2012,7 +2026,7 @@ curl -X POST "http://localhost:3000/auth.generateToken"
 
 ```js
 fetch("http://localhost:3000/auth.generateToken", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -2086,10 +2100,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -2109,7 +2123,7 @@ curl -X GET "http://localhost:3000/auth.one"
 
 ```js
 fetch("http://localhost:3000/auth.one", {
-  method: "GET"
+  method: "GET",
 });
 ```
 
@@ -2181,7 +2195,7 @@ In: `header`
 
 <Property name={"id"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
@@ -2195,7 +2209,7 @@ In: `header`
 
 <Property name={"rol"} type={"string"} required={false} deprecated={undefined}>
 
-<span>Value in:  `"admin" | "user"`</span>
+<span>Value in: `"admin" | "user"`</span>
 
 </Property>
 
@@ -2219,10 +2233,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -2253,7 +2267,7 @@ curl -X POST "http://localhost:3000/auth.updateByAdmin" \
 
 ```js
 fetch("http://localhost:3000/auth.updateByAdmin", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -2321,10 +2335,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -2344,7 +2358,7 @@ curl -X GET "http://localhost:3000/auth.generate2FASecret"
 
 ```js
 fetch("http://localhost:3000/auth.generate2FASecret", {
-  method: "GET"
+  method: "GET",
 });
 ```
 
@@ -2416,20 +2430,20 @@ In: `header`
 
 <Property name={"pin"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `6`</span>
+<span>Minimum length: `6`</span>
 
 </Property>
 
 <Property name={"secret"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -2453,7 +2467,7 @@ curl -X POST "http://localhost:3000/auth.verify2FASetup" \
 
 ```js
 fetch("http://localhost:3000/auth.verify2FASetup", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -2525,7 +2539,7 @@ In: `header`
 
 <Property name={"pin"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `6`</span>
+<span>Minimum length: `6`</span>
 
 </Property>
 
@@ -2533,10 +2547,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -2560,7 +2574,7 @@ curl -X POST "http://localhost:3000/auth.verifyLogin2FA" \
 
 ```js
 fetch("http://localhost:3000/auth.verifyLogin2FA", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -2628,10 +2642,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -2651,7 +2665,7 @@ curl -X POST "http://localhost:3000/auth.disable2FA"
 
 ```js
 fetch("http://localhost:3000/auth.disable2FA", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -2719,10 +2733,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -2742,7 +2756,7 @@ curl -X POST "http://localhost:3000/auth.verifyToken"
 
 ```js
 fetch("http://localhost:3000/auth.verifyToken", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -2814,7 +2828,7 @@ In: `header`
 
 <Property name={"name"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
@@ -2822,10 +2836,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -2849,7 +2863,7 @@ curl -X POST "http://localhost:3000/project.create" \
 
 ```js
 fetch("http://localhost:3000/project.create", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -2921,14 +2935,14 @@ In: `header`
 
 <Property name={"projectId"} type={"string"} required={true} deprecated={false}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -2948,7 +2962,7 @@ curl -X GET "http://localhost:3000/project.one"
 
 ```js
 fetch("http://localhost:3000/project.one", {
-  method: "GET"
+  method: "GET",
 });
 ```
 
@@ -3016,10 +3030,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -3039,7 +3053,7 @@ curl -X GET "http://localhost:3000/project.all"
 
 ```js
 fetch("http://localhost:3000/project.all", {
-  method: "GET"
+  method: "GET",
 });
 ```
 
@@ -3111,14 +3125,14 @@ In: `header`
 
 <Property name={"projectId"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -3141,7 +3155,7 @@ curl -X POST "http://localhost:3000/project.remove" \
 
 ```js
 fetch("http://localhost:3000/project.remove", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -3213,7 +3227,7 @@ In: `header`
 
 <Property name={"name"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
@@ -3223,14 +3237,14 @@ In: `header`
 
 <Property name={"projectId"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -3255,7 +3269,7 @@ curl -X POST "http://localhost:3000/project.update" \
 
 ```js
 fetch("http://localhost:3000/project.update", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -3327,7 +3341,7 @@ In: `header`
 
 <Property name={"name"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
@@ -3343,10 +3357,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -3372,7 +3386,7 @@ curl -X POST "http://localhost:3000/application.create" \
 
 ```js
 fetch("http://localhost:3000/application.create", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -3446,10 +3460,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -3469,7 +3483,7 @@ curl -X GET "http://localhost:3000/application.one"
 
 ```js
 fetch("http://localhost:3000/application.one", {
-  method: "GET"
+  method: "GET",
 });
 ```
 
@@ -3547,10 +3561,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -3574,7 +3588,7 @@ curl -X POST "http://localhost:3000/application.reload" \
 
 ```js
 fetch("http://localhost:3000/application.reload", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -3648,10 +3662,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -3674,7 +3688,7 @@ curl -X POST "http://localhost:3000/application.delete" \
 
 ```js
 fetch("http://localhost:3000/application.delete", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -3748,10 +3762,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -3774,7 +3788,7 @@ curl -X POST "http://localhost:3000/application.stop" \
 
 ```js
 fetch("http://localhost:3000/application.stop", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -3848,10 +3862,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -3874,7 +3888,7 @@ curl -X POST "http://localhost:3000/application.start" \
 
 ```js
 fetch("http://localhost:3000/application.start", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -3948,10 +3962,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -3974,7 +3988,7 @@ curl -X POST "http://localhost:3000/application.redeploy" \
 
 ```js
 fetch("http://localhost:3000/application.redeploy", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -4052,10 +4066,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -4079,7 +4093,7 @@ curl -X POST "http://localhost:3000/application.saveEnvironment" \
 
 ```js
 fetch("http://localhost:3000/application.saveEnvironment", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -4155,7 +4169,10 @@ In: `header`
 
 <Property name={"buildType"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Value in:  `"dockerfile" | "heroku_buildpacks" | "paketo_buildpacks" | "nixpacks"`</span>
+<span>
+  Value in: `"dockerfile" | "heroku_buildpacks" | "paketo_buildpacks" |
+  "nixpacks"`
+</span>
 
 </Property>
 
@@ -4163,10 +4180,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -4191,7 +4208,7 @@ curl -X POST "http://localhost:3000/application.saveBuildType" \
 
 ```js
 fetch("http://localhost:3000/application.saveBuildType", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -4281,10 +4298,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -4311,7 +4328,7 @@ curl -X POST "http://localhost:3000/application.saveGithubProvider" \
 
 ```js
 fetch("http://localhost:3000/application.saveGithubProvider", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -4397,10 +4414,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -4426,7 +4443,7 @@ curl -X POST "http://localhost:3000/application.saveDockerProvider" \
 
 ```js
 fetch("http://localhost:3000/application.saveDockerProvider", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -4512,10 +4529,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -4541,7 +4558,7 @@ curl -X POST "http://localhost:3000/application.saveGitProdiver" \
 
 ```js
 fetch("http://localhost:3000/application.saveGitProdiver", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -4615,10 +4632,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -4641,7 +4658,7 @@ curl -X POST "http://localhost:3000/application.generateSSHKey" \
 
 ```js
 fetch("http://localhost:3000/application.generateSSHKey", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -4715,10 +4732,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -4741,7 +4758,7 @@ curl -X POST "http://localhost:3000/application.removeSSHKey" \
 
 ```js
 fetch("http://localhost:3000/application.removeSSHKey", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -4815,10 +4832,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -4841,7 +4858,7 @@ curl -X POST "http://localhost:3000/application.markRunning" \
 
 ```js
 fetch("http://localhost:3000/application.markRunning", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -4913,13 +4930,13 @@ In: `header`
 
 <Property name={"applicationId"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
 <Property name={"name"} type={"string"} required={false} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
@@ -4973,7 +4990,7 @@ In: `header`
 
 <Property name={"sourceType"} type={"string"} required={false} deprecated={undefined}>
 
-<span>Value in:  `"github" | "docker" | "git"`</span>
+<span>Value in: `"github" | "docker" | "git"`</span>
 
 </Property>
 
@@ -5291,13 +5308,16 @@ In: `header`
 
 <Property name={"applicationStatus"} type={"string"} required={false} deprecated={undefined}>
 
-<span>Value in:  `"idle" | "running" | "done" | "error"`</span>
+<span>Value in: `"idle" | "running" | "done" | "error"`</span>
 
 </Property>
 
 <Property name={"buildType"} type={"string"} required={false} deprecated={undefined}>
 
-<span>Value in:  `"dockerfile" | "heroku_buildpacks" | "paketo_buildpacks" | "nixpacks"`</span>
+<span>
+  Value in: `"dockerfile" | "heroku_buildpacks" | "paketo_buildpacks" |
+  "nixpacks"`
+</span>
 
 </Property>
 
@@ -5313,10 +5333,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -5446,7 +5466,7 @@ curl -X POST "http://localhost:3000/application.update" \
 
 ```js
 fetch("http://localhost:3000/application.update", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -5520,10 +5540,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -5546,7 +5566,7 @@ curl -X POST "http://localhost:3000/application.refreshToken" \
 
 ```js
 fetch("http://localhost:3000/application.refreshToken", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -5620,10 +5640,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -5646,7 +5666,7 @@ curl -X POST "http://localhost:3000/application.deploy" \
 
 ```js
 fetch("http://localhost:3000/application.deploy", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -5720,10 +5740,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -5746,7 +5766,7 @@ curl -X POST "http://localhost:3000/application.cleanQueues" \
 
 ```js
 fetch("http://localhost:3000/application.cleanQueues", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -5820,10 +5840,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -5843,7 +5863,7 @@ curl -X GET "http://localhost:3000/application.readTraefikConfig"
 
 ```js
 fetch("http://localhost:3000/application.readTraefikConfig", {
-  method: "GET"
+  method: "GET",
 });
 ```
 
@@ -5921,10 +5941,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -5948,7 +5968,7 @@ curl -X POST "http://localhost:3000/application.updateTraefikConfig" \
 
 ```js
 fetch("http://localhost:3000/application.updateTraefikConfig", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -6022,10 +6042,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -6045,7 +6065,7 @@ curl -X GET "http://localhost:3000/application.readAppMonitoring"
 
 ```js
 fetch("http://localhost:3000/application.readAppMonitoring", {
-  method: "GET"
+  method: "GET",
 });
 ```
 
@@ -6117,19 +6137,19 @@ In: `header`
 
 <Property name={"name"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
 <Property name={"appName"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
 <Property name={"dockerImage"} type={"string"} required={false} deprecated={undefined}>
 
-<span>Default:  `"mysql:8"`</span>
+<span>Default: `"mysql:8"`</span>
 
 </Property>
 
@@ -6143,13 +6163,13 @@ In: `header`
 
 <Property name={"databaseName"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
 <Property name={"databaseUser"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
@@ -6161,10 +6181,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -6195,7 +6215,7 @@ curl -X POST "http://localhost:3000/mysql.create" \
 
 ```js
 fetch("http://localhost:3000/mysql.create", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -6269,10 +6289,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -6292,7 +6312,7 @@ curl -X GET "http://localhost:3000/mysql.one"
 
 ```js
 fetch("http://localhost:3000/mysql.one", {
-  method: "GET"
+  method: "GET",
 });
 ```
 
@@ -6366,10 +6386,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -6392,7 +6412,7 @@ curl -X POST "http://localhost:3000/mysql.start" \
 
 ```js
 fetch("http://localhost:3000/mysql.start", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -6466,10 +6486,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -6492,7 +6512,7 @@ curl -X POST "http://localhost:3000/mysql.stop" \
 
 ```js
 fetch("http://localhost:3000/mysql.stop", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -6570,10 +6590,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -6597,7 +6617,7 @@ curl -X POST "http://localhost:3000/mysql.saveExternalPort" \
 
 ```js
 fetch("http://localhost:3000/mysql.saveExternalPort", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -6671,10 +6691,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -6697,7 +6717,7 @@ curl -X POST "http://localhost:3000/mysql.deploy" \
 
 ```js
 fetch("http://localhost:3000/mysql.deploy", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -6773,14 +6793,14 @@ In: `header`
 
 <Property name={"applicationStatus"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Value in:  `"idle" | "running" | "done" | "error"`</span>
+<span>Value in: `"idle" | "running" | "done" | "error"`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -6804,7 +6824,7 @@ curl -X POST "http://localhost:3000/mysql.changeStatus" \
 
 ```js
 fetch("http://localhost:3000/mysql.changeStatus", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -6880,14 +6900,14 @@ In: `header`
 
 <Property name={"appName"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -6911,7 +6931,7 @@ curl -X POST "http://localhost:3000/mysql.reload" \
 
 ```js
 fetch("http://localhost:3000/mysql.reload", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -6985,10 +7005,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -7011,7 +7031,7 @@ curl -X POST "http://localhost:3000/mysql.remove" \
 
 ```js
 fetch("http://localhost:3000/mysql.remove", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -7089,10 +7109,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -7116,7 +7136,7 @@ curl -X POST "http://localhost:3000/mysql.saveEnvironment" \
 
 ```js
 fetch("http://localhost:3000/mysql.saveEnvironment", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -7188,19 +7208,19 @@ In: `header`
 
 <Property name={"mysqlId"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
 <Property name={"name"} type={"string"} required={false} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
 <Property name={"appName"} type={"string"} required={false} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
@@ -7210,13 +7230,13 @@ In: `header`
 
 <Property name={"databaseName"} type={"string"} required={false} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
 <Property name={"databaseUser"} type={"string"} required={false} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
@@ -7230,7 +7250,7 @@ In: `header`
 
 <Property name={"dockerImage"} type={"string"} required={false} deprecated={undefined}>
 
-<span>Default:  `"mysql:8"`</span>
+<span>Default: `"mysql:8"`</span>
 
 </Property>
 
@@ -7264,7 +7284,7 @@ In: `header`
 
 <Property name={"applicationStatus"} type={"string"} required={false} deprecated={undefined}>
 
-<span>Value in:  `"idle" | "running" | "done" | "error"`</span>
+<span>Value in: `"idle" | "running" | "done" | "error"`</span>
 
 </Property>
 
@@ -7276,10 +7296,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -7320,7 +7340,7 @@ curl -X POST "http://localhost:3000/mysql.update" \
 
 ```js
 fetch("http://localhost:3000/mysql.update", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -7392,7 +7412,7 @@ In: `header`
 
 <Property name={"name"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
@@ -7402,13 +7422,13 @@ In: `header`
 
 <Property name={"databaseName"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
 <Property name={"databaseUser"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
@@ -7418,7 +7438,7 @@ In: `header`
 
 <Property name={"dockerImage"} type={"string"} required={false} deprecated={undefined}>
 
-<span>Default:  `"postgres:15"`</span>
+<span>Default: `"postgres:15"`</span>
 
 </Property>
 
@@ -7430,10 +7450,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -7463,7 +7483,7 @@ curl -X POST "http://localhost:3000/postgres.create" \
 
 ```js
 fetch("http://localhost:3000/postgres.create", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -7537,10 +7557,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -7560,7 +7580,7 @@ curl -X GET "http://localhost:3000/postgres.one"
 
 ```js
 fetch("http://localhost:3000/postgres.one", {
-  method: "GET"
+  method: "GET",
 });
 ```
 
@@ -7634,10 +7654,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -7660,7 +7680,7 @@ curl -X POST "http://localhost:3000/postgres.start" \
 
 ```js
 fetch("http://localhost:3000/postgres.start", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -7734,10 +7754,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -7760,7 +7780,7 @@ curl -X POST "http://localhost:3000/postgres.stop" \
 
 ```js
 fetch("http://localhost:3000/postgres.stop", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -7838,10 +7858,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -7865,7 +7885,7 @@ curl -X POST "http://localhost:3000/postgres.saveExternalPort" \
 
 ```js
 fetch("http://localhost:3000/postgres.saveExternalPort", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -7939,10 +7959,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -7965,7 +7985,7 @@ curl -X POST "http://localhost:3000/postgres.deploy" \
 
 ```js
 fetch("http://localhost:3000/postgres.deploy", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -8041,14 +8061,14 @@ In: `header`
 
 <Property name={"applicationStatus"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Value in:  `"idle" | "running" | "done" | "error"`</span>
+<span>Value in: `"idle" | "running" | "done" | "error"`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -8072,7 +8092,7 @@ curl -X POST "http://localhost:3000/postgres.changeStatus" \
 
 ```js
 fetch("http://localhost:3000/postgres.changeStatus", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -8146,10 +8166,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -8172,7 +8192,7 @@ curl -X POST "http://localhost:3000/postgres.remove" \
 
 ```js
 fetch("http://localhost:3000/postgres.remove", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -8250,10 +8270,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -8277,7 +8297,7 @@ curl -X POST "http://localhost:3000/postgres.saveEnvironment" \
 
 ```js
 fetch("http://localhost:3000/postgres.saveEnvironment", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -8355,10 +8375,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -8382,7 +8402,7 @@ curl -X POST "http://localhost:3000/postgres.reload" \
 
 ```js
 fetch("http://localhost:3000/postgres.reload", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -8454,13 +8474,13 @@ In: `header`
 
 <Property name={"postgresId"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
 <Property name={"name"} type={"string"} required={false} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
@@ -8470,13 +8490,13 @@ In: `header`
 
 <Property name={"databaseName"} type={"string"} required={false} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
 <Property name={"databaseUser"} type={"string"} required={false} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
@@ -8490,7 +8510,7 @@ In: `header`
 
 <Property name={"dockerImage"} type={"string"} required={false} deprecated={undefined}>
 
-<span>Default:  `"postgres:15"`</span>
+<span>Default: `"postgres:15"`</span>
 
 </Property>
 
@@ -8524,7 +8544,7 @@ In: `header`
 
 <Property name={"applicationStatus"} type={"string"} required={false} deprecated={undefined}>
 
-<span>Value in:  `"idle" | "running" | "done" | "error"`</span>
+<span>Value in: `"idle" | "running" | "done" | "error"`</span>
 
 </Property>
 
@@ -8536,10 +8556,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -8579,7 +8599,7 @@ curl -X POST "http://localhost:3000/postgres.update" \
 
 ```js
 fetch("http://localhost:3000/postgres.update", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -8651,13 +8671,13 @@ In: `header`
 
 <Property name={"name"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
 <Property name={"appName"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
@@ -8667,7 +8687,7 @@ In: `header`
 
 <Property name={"dockerImage"} type={"string"} required={false} deprecated={undefined}>
 
-<span>Default:  `"redis:8"`</span>
+<span>Default: `"redis:8"`</span>
 
 </Property>
 
@@ -8679,10 +8699,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -8710,7 +8730,7 @@ curl -X POST "http://localhost:3000/redis.create" \
 
 ```js
 fetch("http://localhost:3000/redis.create", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -8784,10 +8804,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -8807,7 +8827,7 @@ curl -X GET "http://localhost:3000/redis.one"
 
 ```js
 fetch("http://localhost:3000/redis.one", {
-  method: "GET"
+  method: "GET",
 });
 ```
 
@@ -8881,10 +8901,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -8907,7 +8927,7 @@ curl -X POST "http://localhost:3000/redis.start" \
 
 ```js
 fetch("http://localhost:3000/redis.start", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -8983,14 +9003,14 @@ In: `header`
 
 <Property name={"appName"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -9014,7 +9034,7 @@ curl -X POST "http://localhost:3000/redis.reload" \
 
 ```js
 fetch("http://localhost:3000/redis.reload", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -9088,10 +9108,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -9114,7 +9134,7 @@ curl -X POST "http://localhost:3000/redis.stop" \
 
 ```js
 fetch("http://localhost:3000/redis.stop", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -9192,10 +9212,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -9219,7 +9239,7 @@ curl -X POST "http://localhost:3000/redis.saveExternalPort" \
 
 ```js
 fetch("http://localhost:3000/redis.saveExternalPort", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -9293,10 +9313,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -9319,7 +9339,7 @@ curl -X POST "http://localhost:3000/redis.deploy" \
 
 ```js
 fetch("http://localhost:3000/redis.deploy", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -9395,14 +9415,14 @@ In: `header`
 
 <Property name={"applicationStatus"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Value in:  `"idle" | "running" | "done" | "error"`</span>
+<span>Value in: `"idle" | "running" | "done" | "error"`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -9426,7 +9446,7 @@ curl -X POST "http://localhost:3000/redis.changeStatus" \
 
 ```js
 fetch("http://localhost:3000/redis.changeStatus", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -9500,10 +9520,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -9526,7 +9546,7 @@ curl -X POST "http://localhost:3000/redis.remove" \
 
 ```js
 fetch("http://localhost:3000/redis.remove", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -9604,10 +9624,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -9631,7 +9651,7 @@ curl -X POST "http://localhost:3000/redis.saveEnvironment" \
 
 ```js
 fetch("http://localhost:3000/redis.saveEnvironment", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -9703,19 +9723,19 @@ In: `header`
 
 <Property name={"redisId"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
 <Property name={"name"} type={"string"} required={false} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
 <Property name={"appName"} type={"string"} required={false} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
@@ -9729,7 +9749,7 @@ In: `header`
 
 <Property name={"dockerImage"} type={"string"} required={false} deprecated={undefined}>
 
-<span>Default:  `"redis:8"`</span>
+<span>Default: `"redis:8"`</span>
 
 </Property>
 
@@ -9767,7 +9787,7 @@ In: `header`
 
 <Property name={"applicationStatus"} type={"string"} required={false} deprecated={undefined}>
 
-<span>Value in:  `"idle" | "running" | "done" | "error"`</span>
+<span>Value in: `"idle" | "running" | "done" | "error"`</span>
 
 </Property>
 
@@ -9775,10 +9795,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -9816,7 +9836,7 @@ curl -X POST "http://localhost:3000/redis.update" \
 
 ```js
 fetch("http://localhost:3000/redis.update", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -9888,19 +9908,19 @@ In: `header`
 
 <Property name={"name"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
 <Property name={"appName"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
 <Property name={"dockerImage"} type={"string"} required={false} deprecated={undefined}>
 
-<span>Default:  `"mongo:15"`</span>
+<span>Default: `"mongo:15"`</span>
 
 </Property>
 
@@ -9914,7 +9934,7 @@ In: `header`
 
 <Property name={"databaseUser"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
@@ -9922,10 +9942,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -9954,7 +9974,7 @@ curl -X POST "http://localhost:3000/mongo.create" \
 
 ```js
 fetch("http://localhost:3000/mongo.create", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -10028,10 +10048,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -10051,7 +10071,7 @@ curl -X GET "http://localhost:3000/mongo.one"
 
 ```js
 fetch("http://localhost:3000/mongo.one", {
-  method: "GET"
+  method: "GET",
 });
 ```
 
@@ -10125,10 +10145,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -10151,7 +10171,7 @@ curl -X POST "http://localhost:3000/mongo.start" \
 
 ```js
 fetch("http://localhost:3000/mongo.start", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -10225,10 +10245,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -10251,7 +10271,7 @@ curl -X POST "http://localhost:3000/mongo.stop" \
 
 ```js
 fetch("http://localhost:3000/mongo.stop", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -10329,10 +10349,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -10356,7 +10376,7 @@ curl -X POST "http://localhost:3000/mongo.saveExternalPort" \
 
 ```js
 fetch("http://localhost:3000/mongo.saveExternalPort", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -10430,10 +10450,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -10456,7 +10476,7 @@ curl -X POST "http://localhost:3000/mongo.deploy" \
 
 ```js
 fetch("http://localhost:3000/mongo.deploy", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -10532,14 +10552,14 @@ In: `header`
 
 <Property name={"applicationStatus"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Value in:  `"idle" | "running" | "done" | "error"`</span>
+<span>Value in: `"idle" | "running" | "done" | "error"`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -10563,7 +10583,7 @@ curl -X POST "http://localhost:3000/mongo.changeStatus" \
 
 ```js
 fetch("http://localhost:3000/mongo.changeStatus", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -10639,14 +10659,14 @@ In: `header`
 
 <Property name={"appName"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -10670,7 +10690,7 @@ curl -X POST "http://localhost:3000/mongo.reload" \
 
 ```js
 fetch("http://localhost:3000/mongo.reload", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -10744,10 +10764,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -10770,7 +10790,7 @@ curl -X POST "http://localhost:3000/mongo.remove" \
 
 ```js
 fetch("http://localhost:3000/mongo.remove", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -10848,10 +10868,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -10875,7 +10895,7 @@ curl -X POST "http://localhost:3000/mongo.saveEnvironment" \
 
 ```js
 fetch("http://localhost:3000/mongo.saveEnvironment", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -10947,19 +10967,19 @@ In: `header`
 
 <Property name={"mongoId"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
 <Property name={"name"} type={"string"} required={false} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
 <Property name={"appName"} type={"string"} required={false} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
@@ -10969,7 +10989,7 @@ In: `header`
 
 <Property name={"databaseUser"} type={"string"} required={false} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
@@ -10979,7 +10999,7 @@ In: `header`
 
 <Property name={"dockerImage"} type={"string"} required={false} deprecated={undefined}>
 
-<span>Default:  `"mongo:15"`</span>
+<span>Default: `"mongo:15"`</span>
 
 </Property>
 
@@ -11013,7 +11033,7 @@ In: `header`
 
 <Property name={"applicationStatus"} type={"string"} required={false} deprecated={undefined}>
 
-<span>Value in:  `"idle" | "running" | "done" | "error"`</span>
+<span>Value in: `"idle" | "running" | "done" | "error"`</span>
 
 </Property>
 
@@ -11025,10 +11045,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -11067,7 +11087,7 @@ curl -X POST "http://localhost:3000/mongo.update" \
 
 ```js
 fetch("http://localhost:3000/mongo.update", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -11139,19 +11159,19 @@ In: `header`
 
 <Property name={"name"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
 <Property name={"appName"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
 <Property name={"dockerImage"} type={"string"} required={false} deprecated={undefined}>
 
-<span>Default:  `"mariadb:6"`</span>
+<span>Default: `"mariadb:6"`</span>
 
 </Property>
 
@@ -11169,13 +11189,13 @@ In: `header`
 
 <Property name={"databaseName"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
 <Property name={"databaseUser"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
@@ -11183,10 +11203,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -11217,7 +11237,7 @@ curl -X POST "http://localhost:3000/mariadb.create" \
 
 ```js
 fetch("http://localhost:3000/mariadb.create", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -11291,10 +11311,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -11314,7 +11334,7 @@ curl -X GET "http://localhost:3000/mariadb.one"
 
 ```js
 fetch("http://localhost:3000/mariadb.one", {
-  method: "GET"
+  method: "GET",
 });
 ```
 
@@ -11388,10 +11408,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -11414,7 +11434,7 @@ curl -X POST "http://localhost:3000/mariadb.start" \
 
 ```js
 fetch("http://localhost:3000/mariadb.start", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -11488,10 +11508,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -11514,7 +11534,7 @@ curl -X POST "http://localhost:3000/mariadb.stop" \
 
 ```js
 fetch("http://localhost:3000/mariadb.stop", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -11592,10 +11612,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -11619,7 +11639,7 @@ curl -X POST "http://localhost:3000/mariadb.saveExternalPort" \
 
 ```js
 fetch("http://localhost:3000/mariadb.saveExternalPort", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -11693,10 +11713,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -11719,7 +11739,7 @@ curl -X POST "http://localhost:3000/mariadb.deploy" \
 
 ```js
 fetch("http://localhost:3000/mariadb.deploy", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -11795,14 +11815,14 @@ In: `header`
 
 <Property name={"applicationStatus"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Value in:  `"idle" | "running" | "done" | "error"`</span>
+<span>Value in: `"idle" | "running" | "done" | "error"`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -11826,7 +11846,7 @@ curl -X POST "http://localhost:3000/mariadb.changeStatus" \
 
 ```js
 fetch("http://localhost:3000/mariadb.changeStatus", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -11900,10 +11920,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -11926,7 +11946,7 @@ curl -X POST "http://localhost:3000/mariadb.remove" \
 
 ```js
 fetch("http://localhost:3000/mariadb.remove", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -12004,10 +12024,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -12031,7 +12051,7 @@ curl -X POST "http://localhost:3000/mariadb.saveEnvironment" \
 
 ```js
 fetch("http://localhost:3000/mariadb.saveEnvironment", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -12107,14 +12127,14 @@ In: `header`
 
 <Property name={"appName"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -12138,7 +12158,7 @@ curl -X POST "http://localhost:3000/mariadb.reload" \
 
 ```js
 fetch("http://localhost:3000/mariadb.reload", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -12210,19 +12230,19 @@ In: `header`
 
 <Property name={"mariadbId"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
 <Property name={"name"} type={"string"} required={false} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
 <Property name={"appName"} type={"string"} required={false} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
@@ -12232,13 +12252,13 @@ In: `header`
 
 <Property name={"databaseName"} type={"string"} required={false} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
 <Property name={"databaseUser"} type={"string"} required={false} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
@@ -12252,7 +12272,7 @@ In: `header`
 
 <Property name={"dockerImage"} type={"string"} required={false} deprecated={undefined}>
 
-<span>Default:  `"mariadb:6"`</span>
+<span>Default: `"mariadb:6"`</span>
 
 </Property>
 
@@ -12286,7 +12306,7 @@ In: `header`
 
 <Property name={"applicationStatus"} type={"string"} required={false} deprecated={undefined}>
 
-<span>Value in:  `"idle" | "running" | "done" | "error"`</span>
+<span>Value in: `"idle" | "running" | "done" | "error"`</span>
 
 </Property>
 
@@ -12298,10 +12318,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -12342,7 +12362,7 @@ curl -X POST "http://localhost:3000/mariadb.update" \
 
 ```js
 fetch("http://localhost:3000/mariadb.update", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -12414,7 +12434,7 @@ In: `header`
 
 <Property name={"name"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
@@ -12428,7 +12448,7 @@ In: `header`
 
 <Property name={"composeType"} type={"string"} required={false} deprecated={undefined}>
 
-<span>Value in:  `"docker-compose" | "stack"`</span>
+<span>Value in: `"docker-compose" | "stack"`</span>
 
 </Property>
 
@@ -12436,10 +12456,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -12466,7 +12486,7 @@ curl -X POST "http://localhost:3000/compose.create" \
 
 ```js
 fetch("http://localhost:3000/compose.create", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -12538,14 +12558,14 @@ In: `header`
 
 <Property name={"composeId"} type={"string"} required={true} deprecated={false}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -12565,7 +12585,7 @@ curl -X GET "http://localhost:3000/compose.one"
 
 ```js
 fetch("http://localhost:3000/compose.one", {
-  method: "GET"
+  method: "GET",
 });
 ```
 
@@ -12641,7 +12661,7 @@ In: `header`
 
 <Property name={"name"} type={"string"} required={false} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
@@ -12667,13 +12687,13 @@ In: `header`
 
 <Property name={"sourceType"} type={"string"} required={false} deprecated={undefined}>
 
-<span>Value in:  `"git" | "github" | "raw"`</span>
+<span>Value in: `"git" | "github" | "raw"`</span>
 
 </Property>
 
 <Property name={"composeType"} type={"string"} required={false} deprecated={undefined}>
 
-<span>Value in:  `"docker-compose" | "stack"`</span>
+<span>Value in: `"docker-compose" | "stack"`</span>
 
 </Property>
 
@@ -12711,13 +12731,13 @@ In: `header`
 
 <Property name={"composePath"} type={"string"} required={false} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
 <Property name={"composeStatus"} type={"string"} required={false} deprecated={undefined}>
 
-<span>Value in:  `"idle" | "running" | "done" | "error"`</span>
+<span>Value in: `"idle" | "running" | "done" | "error"`</span>
 
 </Property>
 
@@ -12729,10 +12749,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -12775,7 +12795,7 @@ curl -X POST "http://localhost:3000/compose.update" \
 
 ```js
 fetch("http://localhost:3000/compose.update", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -12847,14 +12867,14 @@ In: `header`
 
 <Property name={"composeId"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -12877,7 +12897,7 @@ curl -X POST "http://localhost:3000/compose.delete" \
 
 ```js
 fetch("http://localhost:3000/compose.delete", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -12949,14 +12969,14 @@ In: `header`
 
 <Property name={"composeId"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -12979,7 +12999,7 @@ curl -X POST "http://localhost:3000/compose.cleanQueues" \
 
 ```js
 fetch("http://localhost:3000/compose.cleanQueues", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -13051,14 +13071,14 @@ In: `header`
 
 <Property name={"composeId"} type={"string"} required={true} deprecated={false}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -13078,7 +13098,7 @@ curl -X GET "http://localhost:3000/compose.allServices"
 
 ```js
 fetch("http://localhost:3000/compose.allServices", {
-  method: "GET"
+  method: "GET",
 });
 ```
 
@@ -13150,7 +13170,7 @@ In: `header`
 
 <Property name={"composeId"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
@@ -13158,10 +13178,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -13185,7 +13205,7 @@ curl -X POST "http://localhost:3000/compose.randomizeCompose" \
 
 ```js
 fetch("http://localhost:3000/compose.randomizeCompose", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -13257,14 +13277,14 @@ In: `header`
 
 <Property name={"composeId"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -13287,7 +13307,7 @@ curl -X POST "http://localhost:3000/compose.deploy" \
 
 ```js
 fetch("http://localhost:3000/compose.deploy", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -13359,14 +13379,14 @@ In: `header`
 
 <Property name={"composeId"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -13389,7 +13409,7 @@ curl -X POST "http://localhost:3000/compose.redeploy" \
 
 ```js
 fetch("http://localhost:3000/compose.redeploy", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -13461,14 +13481,14 @@ In: `header`
 
 <Property name={"composeId"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -13491,7 +13511,7 @@ curl -X POST "http://localhost:3000/compose.stop" \
 
 ```js
 fetch("http://localhost:3000/compose.stop", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -13563,14 +13583,14 @@ In: `header`
 
 <Property name={"composeId"} type={"string"} required={true} deprecated={false}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -13590,7 +13610,7 @@ curl -X GET "http://localhost:3000/compose.getDefaultCommand"
 
 ```js
 fetch("http://localhost:3000/compose.getDefaultCommand", {
-  method: "GET"
+  method: "GET",
 });
 ```
 
@@ -13662,14 +13682,14 @@ In: `header`
 
 <Property name={"composeId"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -13692,7 +13712,7 @@ curl -X POST "http://localhost:3000/compose.generateSSHKey" \
 
 ```js
 fetch("http://localhost:3000/compose.generateSSHKey", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -13764,14 +13784,14 @@ In: `header`
 
 <Property name={"composeId"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -13794,7 +13814,7 @@ curl -X POST "http://localhost:3000/compose.refreshToken" \
 
 ```js
 fetch("http://localhost:3000/compose.refreshToken", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -13866,14 +13886,14 @@ In: `header`
 
 <Property name={"composeId"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -13896,7 +13916,7 @@ curl -X POST "http://localhost:3000/compose.removeSSHKey" \
 
 ```js
 fetch("http://localhost:3000/compose.removeSSHKey", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -13972,14 +13992,14 @@ In: `header`
 
 <Property name={"id"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -14003,7 +14023,7 @@ curl -X POST "http://localhost:3000/compose.deployTemplate" \
 
 ```js
 fetch("http://localhost:3000/compose.deployTemplate", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -14071,10 +14091,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -14094,7 +14114,7 @@ curl -X GET "http://localhost:3000/compose.templates"
 
 ```js
 fetch("http://localhost:3000/compose.templates", {
-  method: "GET"
+  method: "GET",
 });
 ```
 
@@ -14162,10 +14182,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -14185,7 +14205,7 @@ curl -X GET "http://localhost:3000/user.all"
 
 ```js
 fetch("http://localhost:3000/user.all", {
-  method: "GET"
+  method: "GET",
 });
 ```
 
@@ -14257,14 +14277,14 @@ In: `header`
 
 <Property name={"authId"} type={"string"} required={true} deprecated={false}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -14284,7 +14304,7 @@ curl -X GET "http://localhost:3000/user.byAuthId"
 
 ```js
 fetch("http://localhost:3000/user.byAuthId", {
-  method: "GET"
+  method: "GET",
 });
 ```
 
@@ -14356,14 +14376,14 @@ In: `header`
 
 <Property name={"userId"} type={"string"} required={true} deprecated={false}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -14383,7 +14403,7 @@ curl -X GET "http://localhost:3000/user.byUserId"
 
 ```js
 fetch("http://localhost:3000/user.byUserId", {
-  method: "GET"
+  method: "GET",
 });
 ```
 
@@ -14455,13 +14475,13 @@ In: `header`
 
 <Property name={"host"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
 <Property name={"path"} type={"string | null"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
@@ -14479,14 +14499,14 @@ In: `header`
 
 <Property name={"certificateType"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Value in:  `"letsencrypt" | "none"`</span>
+<span>Value in: `"letsencrypt" | "none"`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -14514,7 +14534,7 @@ curl -X POST "http://localhost:3000/domain.create" \
 
 ```js
 fetch("http://localhost:3000/domain.create", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -14588,10 +14608,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -14611,7 +14631,7 @@ curl -X GET "http://localhost:3000/domain.byApplicationId"
 
 ```js
 fetch("http://localhost:3000/domain.byApplicationId", {
-  method: "GET"
+  method: "GET",
 });
 ```
 
@@ -14683,19 +14703,19 @@ In: `header`
 
 <Property name={"domainId"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
 <Property name={"host"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
 <Property name={"path"} type={"string | null"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
@@ -14709,14 +14729,14 @@ In: `header`
 
 <Property name={"certificateType"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Value in:  `"letsencrypt" | "none"`</span>
+<span>Value in: `"letsencrypt" | "none"`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -14744,7 +14764,7 @@ curl -X POST "http://localhost:3000/domain.update" \
 
 ```js
 fetch("http://localhost:3000/domain.update", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -14816,14 +14836,14 @@ In: `header`
 
 <Property name={"domainId"} type={"string"} required={true} deprecated={false}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -14843,7 +14863,7 @@ curl -X GET "http://localhost:3000/domain.one"
 
 ```js
 fetch("http://localhost:3000/domain.one", {
-  method: "GET"
+  method: "GET",
 });
 ```
 
@@ -14915,14 +14935,14 @@ In: `header`
 
 <Property name={"domainId"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -14945,7 +14965,7 @@ curl -X POST "http://localhost:3000/domain.delete" \
 
 ```js
 fetch("http://localhost:3000/domain.delete", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -15017,7 +15037,7 @@ In: `header`
 
 <Property name={"name"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
@@ -15041,10 +15061,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -15072,7 +15092,7 @@ curl -X POST "http://localhost:3000/destination.create" \
 
 ```js
 fetch("http://localhost:3000/destination.create", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -15144,7 +15164,7 @@ In: `header`
 
 <Property name={"name"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
@@ -15168,10 +15188,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -15199,7 +15219,7 @@ curl -X POST "http://localhost:3000/destination.testConnection" \
 
 ```js
 fetch("http://localhost:3000/destination.testConnection", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -15273,10 +15293,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -15296,7 +15316,7 @@ curl -X GET "http://localhost:3000/destination.one"
 
 ```js
 fetch("http://localhost:3000/destination.one", {
-  method: "GET"
+  method: "GET",
 });
 ```
 
@@ -15364,10 +15384,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -15387,7 +15407,7 @@ curl -X GET "http://localhost:3000/destination.all"
 
 ```js
 fetch("http://localhost:3000/destination.all", {
-  method: "GET"
+  method: "GET",
 });
 ```
 
@@ -15461,10 +15481,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -15487,7 +15507,7 @@ curl -X POST "http://localhost:3000/destination.remove" \
 
 ```js
 fetch("http://localhost:3000/destination.remove", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -15559,7 +15579,7 @@ In: `header`
 
 <Property name={"name"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
@@ -15587,10 +15607,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -15619,7 +15639,7 @@ curl -X POST "http://localhost:3000/destination.update" \
 
 ```js
 fetch("http://localhost:3000/destination.update", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -15699,7 +15719,7 @@ In: `header`
 
 <Property name={"prefix"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
@@ -15709,7 +15729,7 @@ In: `header`
 
 <Property name={"database"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
@@ -15731,14 +15751,14 @@ In: `header`
 
 <Property name={"databaseType"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Value in:  `"postgres" | "mariadb" | "mysql" | "mongo"`</span>
+<span>Value in: `"postgres" | "mariadb" | "mysql" | "mongo"`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -15770,7 +15790,7 @@ curl -X POST "http://localhost:3000/backup.create" \
 
 ```js
 fetch("http://localhost:3000/backup.create", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -15844,10 +15864,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -15867,7 +15887,7 @@ curl -X GET "http://localhost:3000/backup.one"
 
 ```js
 fetch("http://localhost:3000/backup.one", {
-  method: "GET"
+  method: "GET",
 });
 ```
 
@@ -15947,7 +15967,7 @@ In: `header`
 
 <Property name={"prefix"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
@@ -15961,14 +15981,14 @@ In: `header`
 
 <Property name={"database"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -15996,7 +16016,7 @@ curl -X POST "http://localhost:3000/backup.update" \
 
 ```js
 fetch("http://localhost:3000/backup.update", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -16070,10 +16090,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -16096,7 +16116,7 @@ curl -X POST "http://localhost:3000/backup.remove" \
 
 ```js
 fetch("http://localhost:3000/backup.remove", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -16170,10 +16190,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -16196,7 +16216,7 @@ curl -X POST "http://localhost:3000/backup.manualBackupPostgres" \
 
 ```js
 fetch("http://localhost:3000/backup.manualBackupPostgres", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -16270,10 +16290,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -16296,7 +16316,7 @@ curl -X POST "http://localhost:3000/backup.manualBackupMySql" \
 
 ```js
 fetch("http://localhost:3000/backup.manualBackupMySql", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -16370,10 +16390,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -16396,7 +16416,7 @@ curl -X POST "http://localhost:3000/backup.manualBackupMariadb" \
 
 ```js
 fetch("http://localhost:3000/backup.manualBackupMariadb", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -16470,10 +16490,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -16496,7 +16516,7 @@ curl -X POST "http://localhost:3000/backup.manualBackupMongo" \
 
 ```js
 fetch("http://localhost:3000/backup.manualBackupMongo", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -16568,14 +16588,14 @@ In: `header`
 
 <Property name={"applicationId"} type={"string"} required={true} deprecated={false}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -16595,7 +16615,7 @@ curl -X GET "http://localhost:3000/deployment.all"
 
 ```js
 fetch("http://localhost:3000/deployment.all", {
-  method: "GET"
+  method: "GET",
 });
 ```
 
@@ -16667,14 +16687,14 @@ In: `header`
 
 <Property name={"composeId"} type={"string"} required={true} deprecated={false}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -16694,7 +16714,7 @@ curl -X GET "http://localhost:3000/deployment.allByCompose"
 
 ```js
 fetch("http://localhost:3000/deployment.allByCompose", {
-  method: "GET"
+  method: "GET",
 });
 ```
 
@@ -16766,7 +16786,7 @@ In: `header`
 
 <Property name={"type"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Value in:  `"bind" | "volume" | "file"`</span>
+<span>Value in: `"bind" | "volume" | "file"`</span>
 
 </Property>
 
@@ -16784,28 +16804,31 @@ In: `header`
 
 <Property name={"mountPath"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
 <Property name={"serviceType"} type={"string"} required={false} deprecated={undefined}>
 
-<span>Default:  `"application"`</span>
+<span>Default: `"application"`</span>
 
-<span>Value in:  `"application" | "postgres" | "mysql" | "mariadb" | "mongo" | "redis" | "compose"`</span>
+<span>
+  Value in: `"application" | "postgres" | "mysql" | "mariadb" | "mongo" |
+  "redis" | "compose"`
+</span>
 
 </Property>
 
 <Property name={"serviceId"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -16834,7 +16857,7 @@ curl -X POST "http://localhost:3000/mounts.create" \
 
 ```js
 fetch("http://localhost:3000/mounts.create", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -16908,10 +16931,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -16934,7 +16957,7 @@ curl -X POST "http://localhost:3000/mounts.remove" \
 
 ```js
 fetch("http://localhost:3000/mounts.remove", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -17008,10 +17031,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -17031,7 +17054,7 @@ curl -X GET "http://localhost:3000/mounts.one"
 
 ```js
 fetch("http://localhost:3000/mounts.one", {
-  method: "GET"
+  method: "GET",
 });
 ```
 
@@ -17103,13 +17126,13 @@ In: `header`
 
 <Property name={"mountId"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
 <Property name={"type"} type={"string"} required={false} deprecated={undefined}>
 
-<span>Value in:  `"bind" | "volume" | "file"`</span>
+<span>Value in: `"bind" | "volume" | "file"`</span>
 
 </Property>
 
@@ -17127,15 +17150,18 @@ In: `header`
 
 <Property name={"serviceType"} type={"string"} required={false} deprecated={undefined}>
 
-<span>Default:  `"application"`</span>
+<span>Default: `"application"`</span>
 
-<span>Value in:  `"application" | "postgres" | "mysql" | "mariadb" | "mongo" | "redis" | "compose"`</span>
+<span>
+  Value in: `"application" | "postgres" | "mysql" | "mariadb" | "mongo" |
+  "redis" | "compose"`
+</span>
 
 </Property>
 
 <Property name={"mountPath"} type={"string"} required={false} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
@@ -17167,10 +17193,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -17206,7 +17232,7 @@ curl -X POST "http://localhost:3000/mounts.update" \
 
 ```js
 fetch("http://localhost:3000/mounts.update", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -17282,19 +17308,19 @@ In: `header`
 
 <Property name={"name"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
 <Property name={"certificateData"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
 <Property name={"privateKey"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
@@ -17306,10 +17332,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -17337,7 +17363,7 @@ curl -X POST "http://localhost:3000/certificates.create" \
 
 ```js
 fetch("http://localhost:3000/certificates.create", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -17409,14 +17435,14 @@ In: `header`
 
 <Property name={"certificateId"} type={"string"} required={true} deprecated={false}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -17436,7 +17462,7 @@ curl -X GET "http://localhost:3000/certificates.one"
 
 ```js
 fetch("http://localhost:3000/certificates.one", {
-  method: "GET"
+  method: "GET",
 });
 ```
 
@@ -17508,14 +17534,14 @@ In: `header`
 
 <Property name={"certificateId"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -17538,7 +17564,7 @@ curl -X POST "http://localhost:3000/certificates.remove" \
 
 ```js
 fetch("http://localhost:3000/certificates.remove", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -17606,10 +17632,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -17629,7 +17655,7 @@ curl -X GET "http://localhost:3000/certificates.all"
 
 ```js
 fetch("http://localhost:3000/certificates.all", {
-  method: "GET"
+  method: "GET",
 });
 ```
 
@@ -17697,10 +17723,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -17720,7 +17746,7 @@ curl -X POST "http://localhost:3000/settings.reloadServer"
 
 ```js
 fetch("http://localhost:3000/settings.reloadServer", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -17788,10 +17814,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -17811,7 +17837,7 @@ curl -X POST "http://localhost:3000/settings.reloadTraefik"
 
 ```js
 fetch("http://localhost:3000/settings.reloadTraefik", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -17879,10 +17905,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -17902,7 +17928,7 @@ curl -X POST "http://localhost:3000/settings.cleanUnusedImages"
 
 ```js
 fetch("http://localhost:3000/settings.cleanUnusedImages", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -17970,10 +17996,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -17993,7 +18019,7 @@ curl -X POST "http://localhost:3000/settings.cleanUnusedVolumes"
 
 ```js
 fetch("http://localhost:3000/settings.cleanUnusedVolumes", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -18061,10 +18087,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -18084,7 +18110,7 @@ curl -X POST "http://localhost:3000/settings.cleanStoppedContainers"
 
 ```js
 fetch("http://localhost:3000/settings.cleanStoppedContainers", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -18152,10 +18178,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -18175,7 +18201,7 @@ curl -X POST "http://localhost:3000/settings.cleanDockerBuilder"
 
 ```js
 fetch("http://localhost:3000/settings.cleanDockerBuilder", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -18243,10 +18269,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -18266,7 +18292,7 @@ curl -X POST "http://localhost:3000/settings.cleanDockerPrune"
 
 ```js
 fetch("http://localhost:3000/settings.cleanDockerPrune", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -18334,10 +18360,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -18357,7 +18383,7 @@ curl -X POST "http://localhost:3000/settings.cleanAll"
 
 ```js
 fetch("http://localhost:3000/settings.cleanAll", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -18425,10 +18451,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -18448,7 +18474,7 @@ curl -X POST "http://localhost:3000/settings.cleanMonitoring"
 
 ```js
 fetch("http://localhost:3000/settings.cleanMonitoring", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -18522,10 +18548,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -18548,7 +18574,7 @@ curl -X POST "http://localhost:3000/settings.saveSSHPrivateKey" \
 
 ```js
 fetch("http://localhost:3000/settings.saveSSHPrivateKey", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -18628,16 +18654,16 @@ In: `header`
 
 <Property name={"certificateType"} type={"string"} required={false} deprecated={undefined}>
 
-<span>Default:  `"none"`</span>
+<span>Default: `"none"`</span>
 
-<span>Value in:  `"letsencrypt" | "none"`</span>
+<span>Value in: `"letsencrypt" | "none"`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -18662,7 +18688,7 @@ curl -X POST "http://localhost:3000/settings.assignDomainServer" \
 
 ```js
 fetch("http://localhost:3000/settings.assignDomainServer", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -18730,10 +18756,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -18753,7 +18779,7 @@ curl -X POST "http://localhost:3000/settings.cleanSSHPrivateKey"
 
 ```js
 fetch("http://localhost:3000/settings.cleanSSHPrivateKey", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -18827,10 +18853,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -18853,7 +18879,7 @@ curl -X POST "http://localhost:3000/settings.updateDockerCleanup" \
 
 ```js
 fetch("http://localhost:3000/settings.updateDockerCleanup", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -18921,10 +18947,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -18944,7 +18970,7 @@ curl -X GET "http://localhost:3000/settings.readTraefikConfig"
 
 ```js
 fetch("http://localhost:3000/settings.readTraefikConfig", {
-  method: "GET"
+  method: "GET",
 });
 ```
 
@@ -19016,14 +19042,14 @@ In: `header`
 
 <Property name={"traefikConfig"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -19046,7 +19072,7 @@ curl -X POST "http://localhost:3000/settings.updateTraefikConfig" \
 
 ```js
 fetch("http://localhost:3000/settings.updateTraefikConfig", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -19114,10 +19140,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -19137,7 +19163,7 @@ curl -X GET "http://localhost:3000/settings.readWebServerTraefikConfig"
 
 ```js
 fetch("http://localhost:3000/settings.readWebServerTraefikConfig", {
-  method: "GET"
+  method: "GET",
 });
 ```
 
@@ -19209,14 +19235,14 @@ In: `header`
 
 <Property name={"traefikConfig"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -19239,7 +19265,7 @@ curl -X POST "http://localhost:3000/settings.updateWebServerTraefikConfig" \
 
 ```js
 fetch("http://localhost:3000/settings.updateWebServerTraefikConfig", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -19307,10 +19333,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -19330,7 +19356,7 @@ curl -X GET "http://localhost:3000/settings.readMiddlewareTraefikConfig"
 
 ```js
 fetch("http://localhost:3000/settings.readMiddlewareTraefikConfig", {
-  method: "GET"
+  method: "GET",
 });
 ```
 
@@ -19402,14 +19428,14 @@ In: `header`
 
 <Property name={"traefikConfig"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -19432,7 +19458,7 @@ curl -X POST "http://localhost:3000/settings.updateMiddlewareTraefikConfig" \
 
 ```js
 fetch("http://localhost:3000/settings.updateMiddlewareTraefikConfig", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -19500,10 +19526,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -19523,7 +19549,7 @@ curl -X POST "http://localhost:3000/settings.checkAndUpdateImage"
 
 ```js
 fetch("http://localhost:3000/settings.checkAndUpdateImage", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -19591,10 +19617,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -19614,7 +19640,7 @@ curl -X POST "http://localhost:3000/settings.updateServer"
 
 ```js
 fetch("http://localhost:3000/settings.updateServer", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -19670,9 +19696,9 @@ export interface Response {
 
 <API>
 
-<APIInfo method={"GET"} route={"/settings.getDokployVersion"}>
+<APIInfo method={"GET"} route={"/settings.getAlviVersion"}>
 
-## settings-getDokployVersion
+## settings-getAlviVersion
 
 ### Authorization
 
@@ -19682,10 +19708,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -19696,7 +19722,7 @@ In: `header`
 <Request value={"cURL"}>
 
 ```bash
-curl -X GET "http://localhost:3000/settings.getDokployVersion"
+curl -X GET "http://localhost:3000/settings.getAlviVersion"
 ```
 
 </Request>
@@ -19704,8 +19730,8 @@ curl -X GET "http://localhost:3000/settings.getDokployVersion"
 <Request value={"JavaScript"}>
 
 ```js
-fetch("http://localhost:3000/settings.getDokployVersion", {
-  method: "GET"
+fetch("http://localhost:3000/settings.getAlviVersion", {
+  method: "GET",
 });
 ```
 
@@ -19773,10 +19799,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -19796,7 +19822,7 @@ curl -X GET "http://localhost:3000/settings.readDirectories"
 
 ```js
 fetch("http://localhost:3000/settings.readDirectories", {
-  method: "GET"
+  method: "GET",
 });
 ```
 
@@ -19868,20 +19894,20 @@ In: `header`
 
 <Property name={"path"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
 <Property name={"traefikConfig"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -19905,7 +19931,7 @@ curl -X POST "http://localhost:3000/settings.updateTraefikFile" \
 
 ```js
 fetch("http://localhost:3000/settings.updateTraefikFile", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -19977,14 +20003,14 @@ In: `header`
 
 <Property name={"path"} type={"string"} required={true} deprecated={false}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -20004,7 +20030,7 @@ curl -X GET "http://localhost:3000/settings.readTraefikFile"
 
 ```js
 fetch("http://localhost:3000/settings.readTraefikFile", {
-  method: "GET"
+  method: "GET",
 });
 ```
 
@@ -20072,10 +20098,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -20095,7 +20121,7 @@ curl -X GET "http://localhost:3000/settings.getOpenApiDocument"
 
 ```js
 fetch("http://localhost:3000/settings.getOpenApiDocument", {
-  method: "GET"
+  method: "GET",
 });
 ```
 
@@ -20171,20 +20197,20 @@ In: `header`
 
 <Property name={"username"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
 <Property name={"password"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -20209,7 +20235,7 @@ curl -X POST "http://localhost:3000/security.create" \
 
 ```js
 fetch("http://localhost:3000/security.create", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -20281,14 +20307,14 @@ In: `header`
 
 <Property name={"securityId"} type={"string"} required={true} deprecated={false}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -20308,7 +20334,7 @@ curl -X GET "http://localhost:3000/security.one"
 
 ```js
 fetch("http://localhost:3000/security.one", {
-  method: "GET"
+  method: "GET",
 });
 ```
 
@@ -20380,14 +20406,14 @@ In: `header`
 
 <Property name={"securityId"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -20410,7 +20436,7 @@ curl -X POST "http://localhost:3000/security.delete" \
 
 ```js
 fetch("http://localhost:3000/security.delete", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -20482,26 +20508,26 @@ In: `header`
 
 <Property name={"securityId"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
 <Property name={"username"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
 <Property name={"password"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -20526,7 +20552,7 @@ curl -X POST "http://localhost:3000/security.update" \
 
 ```js
 fetch("http://localhost:3000/security.update", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -20598,13 +20624,13 @@ In: `header`
 
 <Property name={"regex"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
 <Property name={"replacement"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
@@ -20616,10 +20642,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -20645,7 +20671,7 @@ curl -X POST "http://localhost:3000/redirects.create" \
 
 ```js
 fetch("http://localhost:3000/redirects.create", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -20717,14 +20743,14 @@ In: `header`
 
 <Property name={"redirectId"} type={"string"} required={true} deprecated={false}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -20744,7 +20770,7 @@ curl -X GET "http://localhost:3000/redirects.one"
 
 ```js
 fetch("http://localhost:3000/redirects.one", {
-  method: "GET"
+  method: "GET",
 });
 ```
 
@@ -20816,14 +20842,14 @@ In: `header`
 
 <Property name={"redirectId"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -20846,7 +20872,7 @@ curl -X POST "http://localhost:3000/redirects.delete" \
 
 ```js
 fetch("http://localhost:3000/redirects.delete", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -20918,19 +20944,19 @@ In: `header`
 
 <Property name={"redirectId"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
 <Property name={"regex"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
 <Property name={"replacement"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
@@ -20938,10 +20964,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -20967,7 +20993,7 @@ curl -X POST "http://localhost:3000/redirects.update" \
 
 ```js
 fetch("http://localhost:3000/redirects.update", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -21047,22 +21073,22 @@ In: `header`
 
 <Property name={"protocol"} type={"string"} required={false} deprecated={undefined}>
 
-<span>Default:  `"tcp"`</span>
+<span>Default: `"tcp"`</span>
 
-<span>Value in:  `"tcp" | "udp"`</span>
+<span>Value in: `"tcp" | "udp"`</span>
 
 </Property>
 
 <Property name={"applicationId"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -21088,7 +21114,7 @@ curl -X POST "http://localhost:3000/port.create" \
 
 ```js
 fetch("http://localhost:3000/port.create", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -21160,14 +21186,14 @@ In: `header`
 
 <Property name={"portId"} type={"string"} required={true} deprecated={false}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -21187,7 +21213,7 @@ curl -X GET "http://localhost:3000/port.one"
 
 ```js
 fetch("http://localhost:3000/port.one", {
-  method: "GET"
+  method: "GET",
 });
 ```
 
@@ -21259,14 +21285,14 @@ In: `header`
 
 <Property name={"portId"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -21289,7 +21315,7 @@ curl -X POST "http://localhost:3000/port.delete" \
 
 ```js
 fetch("http://localhost:3000/port.delete", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -21361,7 +21387,7 @@ In: `header`
 
 <Property name={"portId"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
@@ -21375,16 +21401,16 @@ In: `header`
 
 <Property name={"protocol"} type={"string"} required={false} deprecated={undefined}>
 
-<span>Default:  `"tcp"`</span>
+<span>Default: `"tcp"`</span>
 
-<span>Value in:  `"tcp" | "udp"`</span>
+<span>Value in: `"tcp" | "udp"`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -21410,7 +21436,7 @@ curl -X POST "http://localhost:3000/port.update" \
 
 ```js
 fetch("http://localhost:3000/port.update", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -21482,19 +21508,19 @@ In: `header`
 
 <Property name={"registryName"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
 <Property name={"username"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
 <Property name={"password"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
@@ -21504,7 +21530,7 @@ In: `header`
 
 <Property name={"registryType"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Value in:  `"selfHosted" | "cloud"`</span>
+<span>Value in: `"selfHosted" | "cloud"`</span>
 
 </Property>
 
@@ -21512,10 +21538,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -21543,7 +21569,7 @@ curl -X POST "http://localhost:3000/registry.create" \
 
 ```js
 fetch("http://localhost:3000/registry.create", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -21615,14 +21641,14 @@ In: `header`
 
 <Property name={"registryId"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -21645,7 +21671,7 @@ curl -X POST "http://localhost:3000/registry.remove" \
 
 ```js
 fetch("http://localhost:3000/registry.remove", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -21717,13 +21743,13 @@ In: `header`
 
 <Property name={"registryId"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
 <Property name={"registryName"} type={"string"} required={false} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
@@ -21733,19 +21759,19 @@ In: `header`
 
 <Property name={"username"} type={"string"} required={false} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
 <Property name={"password"} type={"string"} required={false} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
 <Property name={"registryUrl"} type={"string"} required={false} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
@@ -21755,20 +21781,20 @@ In: `header`
 
 <Property name={"registryType"} type={"string"} required={false} deprecated={undefined}>
 
-<span>Value in:  `"selfHosted" | "cloud"`</span>
+<span>Value in: `"selfHosted" | "cloud"`</span>
 
 </Property>
 
 <Property name={"adminId"} type={"string"} required={false} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -21799,7 +21825,7 @@ curl -X POST "http://localhost:3000/registry.update" \
 
 ```js
 fetch("http://localhost:3000/registry.update", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -21867,10 +21893,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -21890,7 +21916,7 @@ curl -X GET "http://localhost:3000/registry.all"
 
 ```js
 fetch("http://localhost:3000/registry.all", {
-  method: "GET"
+  method: "GET",
 });
 ```
 
@@ -21962,14 +21988,14 @@ In: `header`
 
 <Property name={"registryId"} type={"string"} required={true} deprecated={false}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -21989,7 +22015,7 @@ curl -X GET "http://localhost:3000/registry.one"
 
 ```js
 fetch("http://localhost:3000/registry.one", {
-  method: "GET"
+  method: "GET",
 });
 ```
 
@@ -22061,19 +22087,19 @@ In: `header`
 
 <Property name={"registryName"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
 <Property name={"username"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
 <Property name={"password"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
@@ -22083,7 +22109,7 @@ In: `header`
 
 <Property name={"registryType"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Value in:  `"selfHosted" | "cloud"`</span>
+<span>Value in: `"selfHosted" | "cloud"`</span>
 
 </Property>
 
@@ -22091,10 +22117,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -22122,7 +22148,7 @@ curl -X POST "http://localhost:3000/registry.testRegistry" \
 
 ```js
 fetch("http://localhost:3000/registry.testRegistry", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -22194,26 +22220,26 @@ In: `header`
 
 <Property name={"registryUrl"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
 <Property name={"username"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
 <Property name={"password"} type={"string"} required={true} deprecated={undefined}>
 
-<span>Minimum length:  `1`</span>
+<span>Minimum length: `1`</span>
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -22238,7 +22264,7 @@ curl -X POST "http://localhost:3000/registry.enableSelfHostedRegistry" \
 
 ```js
 fetch("http://localhost:3000/registry.enableSelfHostedRegistry", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -22306,10 +22332,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -22329,7 +22355,7 @@ curl -X GET "http://localhost:3000/cluster.getNodes"
 
 ```js
 fetch("http://localhost:3000/cluster.getNodes", {
-  method: "GET"
+  method: "GET",
 });
 ```
 
@@ -22403,10 +22429,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -22429,7 +22455,7 @@ curl -X POST "http://localhost:3000/cluster.removeWorker" \
 
 ```js
 fetch("http://localhost:3000/cluster.removeWorker", {
-  method: "POST"
+  method: "POST",
 });
 ```
 
@@ -22497,10 +22523,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -22520,7 +22546,7 @@ curl -X GET "http://localhost:3000/cluster.addWorker"
 
 ```js
 fetch("http://localhost:3000/cluster.addWorker", {
-  method: "GET"
+  method: "GET",
 });
 ```
 
@@ -22588,10 +22614,10 @@ In: `header`
 
 </Property>
 
-| Status code | Description |
-| ----------- | ----------- |
-| `200` | Successful response |
-| `default` | Error response |
+| Status code | Description         |
+| ----------- | ------------------- |
+| `200`       | Successful response |
+| `default`   | Error response      |
 
 </APIInfo>
 
@@ -22611,7 +22637,7 @@ curl -X GET "http://localhost:3000/cluster.addManager"
 
 ```js
 fetch("http://localhost:3000/cluster.addManager", {
-  method: "GET"
+  method: "GET",
 });
 ```
 
